@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #001f3f;
+}
+
+.content {
+    margin: 1rem auto; /* Ajusté pour déplacer vers le haut */
+    padding: 1.5rem; /* Ajusté */
+    background-color: #f2f2f2;
+    box-shadow: 0 0 5px 5px rgba(0,0,0, .05);
+    width: 80%;
+    max-width: 800px; /* Réduire si nécessaire */
+    color: #001f3f;
+    margin-top: -20px; /* Déplace le bloc vers le haut */
+}
+
+.row.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .row.content {
+        flex-direction: column;
+    }
+}
+
+.logo-header {
+    max-width: 250px; /* Ajusté pour la taille du logo */
+    height: auto; /* Garde le ratio de l'image */
+    display: block; /* Assurez-vous que le logo est traité comme un bloc pour appliquer la marge */
+    margin-top: 15px; /* Ajustez selon les besoins pour décaler le logo vers le bas */
+    margin-bottom: 0; /* Optionnel: ajustez si vous souhaitez modifier l'espacement sous le logo */
+}
+
+.cd__intro h1 {
+    font-size: 4px; /* Ajustez la taille de police si nécessaire */
+    margin-bottom: 0.1rem; /* Réduit l'espacement entre le titre et le sous-titre */
+}
+
+.cd__intro p {
+    margin-top: 10px; /* Ajusté */
+    font-style: italic; /* Italique pour 'École Centrale Casablanca' */
+}
+
+.form-control, .btn-class {
+    height: 40px;
+    padding: 0 10px;
+}
+
+/* Réduire la taille des images */
+.img-fluid {
+    max-height: 200px; /* Ajustez selon vos besoins */
+    width: auto;
+}
+
+/* Style spécifique pour tout texte et boutons dans le formulaire */
+.signin-text, .form-group label, .form-check-label, .btn-class, .form-control {
+    color: #001f3f;
+}
+
+.form-control {
+    border-color: #005a5a!important;
+    border-style: solid !important;
+    border-width: 0 0 0.5px 0 !important;
+    background-color: #f2f2f2;
+}
+
+.form-control:focus {
+    border-color: #f2f2f2;
+    box-shadow: none;
+}
+
+.btn-class {
+    border-color: #005a5a;
+    color: #005a5a;
+}
+
+.btn-class:hover {
+    background-color: #005a5a;
+    color: #f2f2f2;
+}

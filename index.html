@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="CodeHim">
+      <title> Centrale de Cas  </title>
+      <!-- Style CSS -->
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/demo.css">
+      <!-- FontAwesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <!-- Demo CSS (No need to include it into your project) -->
+   </head>
+   <body>
+      <header class="cd__intro">
+         <img src="https://i.ibb.co/09wbhv7/centrale-de-cas-high-resolution-logo-transparent-1.png" alt="Logo Centrale de Cas" class="img-fluid mb-3 logo-header"> <!-- Ligne ajoutée pour le logo -->
+         <h1> Bienvenue à Centrale de Cas </h1>
+         <p> Ecole Centrale Casablanca </p>
+      </header>
+      <!--$%adsense%$-->
+      <main class="cd__main">
+         <!-- Start DEMO HTML (Use the following code into your project)-->
+         <div class="container">
+            <div class="row content">
+               <div class="col-md-6 mb-3">
+                  <img src="https://i.ibb.co/r2X8NsQ/business-case.png" alt="Description de la nouvelle image" class="img-fluid">
+               </div>
+               <div class="col-md-6">
+                  <h3 class="signin-text mb-3"> Connectez-vous !</h3>
+                  <form>
+                     <div class="form-group">
+                        <label for="email">Email</label>  
+                        <input type="email" name="email" class="form-control">
+                     </div>
+                     <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-group">
+                            <input type="password" name="password" class="form-control" id="password">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-eye" id="togglePassword"></i>
+                                </span>
+                            </div>
+                        </div>
+                     </div>      
+                     <div class="form-group form-check">
+                        <input type="checkbox" name="checkbox" class="form-check-input" id="checkbox">
+                        <label class="form-check-label" for="checkbox">Remember Me</label>
+                     </div>
+                     <button class="btn btn-class">Login</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <!-- END DEMO HTML (Happy Coding!)-->
+      </main>
+      <footer class="cd__credit">Author: Groupe PLBD 29 - Tous droits réservés </footer>
+      
+      <!-- Script JS -->
+      <script src="./js/script.js"></script>
+      <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = document.querySelector('[name="email"]').value;
+            const password = document.querySelector('[name="password"]').value;
+        
+            if (email === "admin@gmail.com" && password === "admin") {
+                window.location.href = 'acceuil.html'; // Mettez ici le chemin correct vers votre page d'accueil
+            } else {
+                alert('Identifiants incorrects!');
+            }
+        });
+        
+        document.getElementById('togglePassword').addEventListener('click', function (e) {
+            const password = document.getElementById('password');
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+      </script>
+      <!--$%analytics%$-->
+   </body>
+</html>

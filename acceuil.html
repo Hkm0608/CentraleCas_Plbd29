@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Centrale de Cas - Start your project with the best resources!</title>
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: #f4f7fa; /* Fond clair pour assortir avec le logo */
+          color: #333; /* Couleur de texte générale */
+      }
+      .header {
+          background-color: #f2f2f2; /* Gris clair */
+          padding: 20px 30px; /* En-tête étendu avec padding horizontal */
+          display: flex; /* Utilisez flexbox pour aligner les éléments */
+          justify-content: space-between; /* Répartit l'espace entre les éléments */
+      }
+      .header-logo {
+          height: 30px; /* Hauteur agrandie du logo */
+      }
+      .nav-links {
+          display: flex; /* Pour aligner les liens horizontalement */
+          margin-left: auto; /* Pousse les liens à droite */
+      }
+      .header-link {
+          text-decoration: none; /* Pas de soulignement */
+          color: #000; /* Couleur de lien noire */
+          margin-left: 20px; /* Espacement uniforme entre les liens */
+          font-size: 0.9em; /* Texte un peu plus petit */
+          font-style: italic; /* Texte en italique */
+          padding: 7px; /* Espacement autour du texte */
+          transition: background-color 0.3s, color 0.3s; /* Animation */
+      }
+      .header-link:hover, .header-link:focus {
+          text-decoration: underline; /* Surlignage au survol et au focus */
+          cursor: pointer; /* Change le curseur au survol */
+      }
+      .main-content {
+          padding: 15px;
+      }
+      .fancy-text {
+          font-family: 'Georgia', serif; /* Belle police */
+          font-size: 1.2em;
+          text-align: justify;
+          max-width: 800px; /* Largeur maximale pour une meilleure lisibilité */
+          margin: auto; /* Centre le texte */
+      }
+  </style>
+    <meta name="description" content="Centrale de Cas offers customizable templates based on modern standards to kick-start your projects efficiently." />
+    <meta name="author" content="YourName" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img src="https://i.ibb.co/yspdyT8/centrale-de-cas-high-resolution-logo-transparent-1.png" alt="Centrale de Cas Logo" class="header-logo">
+      <div class="nav-links">
+          <a href="#accueil" class="header-link">Accueil</a>
+          <a href="#apropos" class="header-link">À propos</a>
+          <a href="#secteurs" class="header-link">Secteurs</a>
+          <a href="#business-cases" class="header-link">Business Cases</a>
+          <a href="#forum" class="header-link">Forum de Discussion</a>
+          <a href="index.html" class="header-link">Déconnexion</a>
+      </div>
+   </div>
+    <div id="main-container">
+      <div id="main" class="wrapper clearfix">
+        <div id="intro" class="clearfix">
+            <div id="badges" class="clearfix">
+                <ul>
+                  <li>
+                    <div class="badge-label">
+                      Études<br />Réelles
+                    </div>
+                  </li>
+                  <li>
+                    <div class="badge-label">Stratégie</div>
+                  </li>
+                  <li>
+                    <div class="badge-label">Innovation</div>
+                  </li>
+                </ul>
+            </div>
+          <p>
+            <br /><strong>Inspirez l'ingénieur de demain, aujourd'hui !</strong>
+          </p>
+        </div>
+        <div class="js-stack" style="padding: 20px">
+          <p style="text-align: left; margin: 0; margin-bottom: 10px">
+            Chaque business case proposé sur notre plateforme est conçu pour vous immerger dans des situations professionnelles concrètes. Ces études de cas sont élaborées pour stimuler l'esprit critique, encourager l'innovation et affiner les compétences de gestion de projet. En se confrontant à des scénarios réels, apprendre les enjeux économiques, anticiper les risques et identifier les opportunités stratégiques seront désormais possibles. Cet apprentissage actif est une préparation efficace à la prise de décision et à la réussite de projets complexes dans les carrières professionnelles, faisant ainsi de "<strong>Centrale de Cas</strong>" un pilier essentiel dans le développement académique et professionnel.
+          </p>
+          <strong>Développez vos compétences en ingénierie</strong> avec nos propositions d'étude de cas. De la théorie à la pratique, nos ressources sont conçues pour vous offrir une compréhension approfondie des demandes et attendus des entreprises ainsi que les outils et les méthodologies essentiels à l'ingénierie moderne. Plongez dans des études de cas enrichissantes et devenez acteur de l'innovation dans votre domaine.
+        </div>
+        <h2 class="separator">1 - Pre-configuration</h2>
+        <div id="preconfig-section" class="clearfix">
+          <div class="preconfig-container blank-background">
+            <button id="preconfig-blank" class="preconfig-block blank-background clearfix">
+              <h3>Classic H5BP</h3>
+            </button>
+            <div class="preconfig-links-container">
+              <a target="_blank" href="http://html5boilerplate.com/docs/" class="first">Docs</a
+              ><a target="_blank" href="http://demo.html5boilerplate.com/">Demo</a>
+            </div>
+          </div>
+          <div class="preconfig-container initializr-background">
+            <button
+              id="preconfig-initializr"
+              class="preconfig-block initializr-background clearfix"
+            >
+              <h3>Responsive</h3>
+            </button>
+            <div class="preconfig-links-container">
+              <a
+                target="_blank"
+                href="http://verekia.com/initializr/responsive-template"
+                class="first"
+                >Docs</a
+              ><a target="_blank" href="#">Demo</a>
+            </div>
+          </div>
+          <div class="preconfig-container bootstrap-background">
+            <button id="preconfig-bootstrap" class="preconfig-block bootstrap-background clearfix">
+              <h3>Bootstrap</h3>
+            </button>
+            <div class="preconfig-links-container">
+              <a target="_blank" href="http://twitter.github.com/bootstrap/" class="first">Docs</a
+              ><a target="_blank" href="http://twitter.github.com/bootstrap/examples/hero.html"
+                >Demo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="hidden-section">
+          <h2 id="fine-tuning-separator" class="separator">2 - Fine tuning</h2>
+          <div id="customize-section" class="clearfix">
+            <div class="customize-section">
+              <h3>HTML/CSS Template</h3>
+              <label><input type="radio" name="htmlcss" value="h5bp-content" />No template</label>
+              <label
+                ><input type="radio" name="htmlcss" value="izr-responsive" />Mobile-first
+                Responsive</label
+              >
+              <label
+                ><input type="radio" name="htmlcss" value="boot-hero" />Responsive Bootstrap
+                2.0.4</label
+              >
+            </div>
+            <div class="customize-section">
+              <h3>HTML5 Polyfills</h3>
+              <label><input type="radio" name="polyfill" value="modernizr" />Modernizr</label>
+              <label><input type="radio" name="polyfill" value="html5shiv" />Just HTML5shiv</label>
+              <label
+                ><input type="checkbox" value="respond" />Respond -
+                <a
+                  target="_blank"
+                  href="https://github.com/h5bp/html5-boilerplate/issues/816#issuecomment-2512805"
+                  >Alternatives</a
+                ></label
+              >
+            </div>
+            <div class="customize-section">
+              <h3>Server Config</h3>
+              <label><input type="checkbox" value="h5bp-htaccess" />.htaccess</label>
+              <label><input type="checkbox" value="h5bp-nginx" />nginx.conf</label>
+              <label><input type="checkbox" value="h5bp-webconfig" />web.config</label>
+            </div>
+            <div class="customize-section">
+              <h3>jQuery</h3>
+              <label><input type="checkbox" value="jquerymin" />Minified</label>
+              <label><input type="checkbox" value="jquerydev" />Development</label>
+            </div>
+            <div class="customize-section">
+              <h3>Stylesheet Language</h3>
+              <label><input type="radio" name="stylelang" value="css-mode" />CSS</label>
+              <label
+                ><input type="radio" name="stylelang" value="less-mode" />LESS -
+                <a
+                  href="http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive"
+                  target="_blank"
+                  >Tutorial</a
+                ></label
+              >
+            </div>
+            <div class="customize-section">
+              <h3>Google Services</h3>
+              <label><input type="checkbox" value="h5bp-chromeframe" />Chrome Frame</label>
+              <label><input type="checkbox" value="h5bp-analytics" />Analytics</label>
+            </div>
+
+            <div class="customize-section">
+              <h3 class="first-h5bp-label">H5BP Optional</h3>
+              <label><input type="checkbox" value="h5bp-build" />Build Script (6MB)</label>
+              <label><input type="checkbox" value="h5bp-iecond" />IE Classes</label>
+              <label><input type="checkbox" value="h5bp-favicon" />Favicon</label>
+            </div>
+            <div class="customize-section customize-h5bp-no-title customize-h5bp-no-title-middle">
+              <h3 class="second-h5bp-label">H5BP Optional</h3>
+              <label><input type="checkbox" value="h5bp-appletouchicons" />Apple Touch Icons</label>
+              <label><input type="checkbox" value="h5bp-scripts" />plugins.js</label>
+              <label><input type="checkbox" value="h5bp-robots" />Robots.txt</label>
+            </div>
+            <div class="customize-section customize-h5bp-no-title">
+              <h3 class="third-h5bp-label">H5BP Optional</h3>
+              <label><input type="checkbox" value="h5bp-humans" />Humans.txt</label>
+              <label><input type="checkbox" value="h5bp-404" />404 Page</label>
+              <label
+                ><input type="checkbox" value="h5bp-adobecrossdomain" />Adobe Cross Domain</label
+              >
+            </div>
+          </div>
+
+          <!-- 				<textarea id="download-url"></textarea><br /> -->
+          <!-- 				<textarea id="preview-url"></textarea> -->
+
+          <div id="download-section" class="clearfix">
+            <a
+              id="download-link"
+              href="#"
+              onclick="event.preventDefault(); alert('Initializr no longer works. This page is only up for the memories :)'); return false;"
+              >Download it!</a
+            >
+            <a
+              id="preview-link"
+              href="#"
+              target="_blank"
+              onclick="event.preventDefault(); alert('Initializr no longer works. This page is only up for the memories :)'); return false;"
+              >What's inside?</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- #main -->
+    </div>
+    <!-- #main-container -->
+
+    <div id="about-container">
+      <div class="wrapper">
+        <div id="github-container" class="clearfix">
+          <img src="img/github-logo.png" alt="Github logo" />
+          <div id="github-repositories">
+            <h3>Github Repositories</h3>
+            <ul>
+              <li>
+                <a target="_blank" href="https://github.com/verekia/initializr"
+                  >The builder itself</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/verekia/initializr-template"
+                  >The responsive template</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/verekia/initializr-website"
+                  >This page</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article id="docs">
+          <h3>About Initializr</h3>
+          <p>
+            Initializr is here to kick-start the development of your new projects. It generates
+            templates based on HTML5 Boilerplate by allowing you to choose which parts you want or
+            don't want from it. A
+            <a href="http://verekia.com/initializr/responsive-template" target="_blank"
+              >responsive template</a
+            >
+            has also been added to start from a basic design instead of a blank page.
+          </p>
+
+          <h3>International guides</h3>
+          <p>
+            Initializr functioning is pretty intuitive but it can help to read guides about it in
+            your own language. Here are some which will help you using Initializr and understanding
+            HTML5 Boilerplate, HTML5shiv or Modernizr, in
+            <a
+              href="http://www.html5-css3.fr/html5/initializr-generateur-template-html5-boilerplate"
+              target="_blank"
+              >French</a
+            >,
+            <a
+              href="http://www.mk-dizajn.com/en/2011/06/initializr-izvrstan-html5-predlozak-za-svaki-web-projekt/"
+              target="_blank"
+              >English</a
+            >, <a href="http://www.diegoante.com/initializr.html" target="_blank">Spanish</a>,
+            <a
+              href="http://starwebdesign.com.ua/blog/2011/02/16/initializr-generator-chistogo-i-nastraivaemogo-html5-shablona-osnovannogo-na-boilerplate/"
+              target="_blank"
+              >Russian</a
+            >,
+            <a
+              href="http://www.mk-dizajn.com/2011/06/initializr-izvrstan-html5-predlozak-za-svaki-web-projekt/"
+              target="_blank"
+              >Croatian</a
+            >,
+            <a
+              href="http://www.jaapvdveen.nl/2011/02/17/initializr-een-template-generator-op-basis-van-html5-boilerplate/"
+              target="_blank"
+              >Dutch</a
+            >
+            and
+            <a
+              href="http://flaviosilveira.com/2011/initializr-comece-seu-projeto-html5-em-15-segundos/"
+              target="_blank"
+              >Portuguese</a
+            >.
+          </p>
+
+          <h3>Contact</h3>
+          <p>
+            <a target="_blank" href="https://twitter.com/verekia">@verekia</a>
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
